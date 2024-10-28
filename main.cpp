@@ -125,4 +125,4 @@ int select_goat(list<Goat> trp) {
         cin >> input;
     }
     return input;
-}
+} 
