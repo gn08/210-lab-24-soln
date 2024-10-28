@@ -132,32 +132,33 @@ int select_goat(list<Goat> trp) {
     }
     return input;
 } 
-
+//function sort goats by age
 void sort_goats_by_age(list<Goat>& trip){
     trip.sort([](const Goat& a, const Goat& b) { return a.get_age() < b.get_age(); });
     cout << "Goats sorted by age.\n";
 }
-
+//find the oldest goat
 void find_oldest_goat(const list<Goat>& trip){
 
 }
-
+//function to count goats
 void count_goats_of_color(const list<Goat>& trip, const string& color){
     int count = count_if(trip.begin(), trip.end(), [&color](const Goat& g) { return g.get_color() == color; });
     cout << "There are " << count << " goats of color " << color << ".\n";
 }
-
+//function shuffle goats
 void shuffle_goats(list<Goat>& trip){
 
 }
-
+//function reverse goat list
 void reverse_goats(list<Goat>& trip){
     trip.reverse();
     cout << "Goats reversed.\n";
 }
-
+//function remove goats
 void remove_goats_older_than(list<Goat>&trip, int age_limit){
-
+    trip.remove_if([age_limit](const Goat& g) { return g.get_age() > age_limit; });
+    cout << "Removed goats older than " << age_limit << ".\n";
 }
 
 void display_youngest_goat(const list<Goat>& trip){
