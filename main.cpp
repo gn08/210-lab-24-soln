@@ -126,3 +126,35 @@ int select_goat(list<Goat> trp) {
     }
     return input;
 } 
+
+void sort_goats_by_age(list<Goat>& trip){
+
+}
+
+void find_oldest_goat(const list<Goat>& trip){
+
+}
+
+void count_goats_of_color(const list<Goat>& trip, const string& color){
+
+}
+
+void shuffle_goats(list<Goat>& trip){
+
+}
+
+void reverse_goats(list<Goat>& trip){
+
+}
+
+void remove_goats_older_than(list<Goat>&trip, int age_limit){
+
+}
+
+void display_youngest_goat(const list<Goat>& trip){
+
+}
+
+void display_unique_name_goats(const list<Goat>& trip){
+    
+}
