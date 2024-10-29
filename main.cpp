@@ -161,8 +161,11 @@ void display_youngest_goat(const list<Goat>& trip){
 
 }
 //unique names
-void display_unique_name_goats(const list<Goat>& trip){
-
+void display_goat_ages(const list<Goat>& trip){
+    cout << "Ages: ";
+    for (const auto& goat :trip){
+        cout << goat.get_age();
+    }
 }
 
 //clear goats
