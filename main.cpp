@@ -137,18 +137,14 @@ void sort_goats_by_age(list<Goat>& trip){
     trip.sort([](const Goat& a, const Goat& b) { return a.get_age() < b.get_age(); });
     cout << "Goats sorted by age.\n";
 }
-//find the oldest goat
-void find_oldest_goat(const list<Goat>& trip){
-
+//find the total goats
+void total_goats(const list<Goat>& trip){
+    cout << "Total goats: " << trip.size() << endl;
 }
 //function to count goats
 void count_goats_of_color(const list<Goat>& trip, const string& color){
     int count = count_if(trip.begin(), trip.end(), [&color](const Goat& g) { return g.get_color() == color; });
     cout << "There are " << count << " goats of color " << color << ".\n";
-}
-//function shuffle goats
-void shuffle_goats(list<Goat>& trip){
-
 }
 //function reverse goat list
 void reverse_goats(list<Goat>& trip){
@@ -167,4 +163,10 @@ void display_youngest_goat(const list<Goat>& trip){
 //unique names
 void display_unique_name_goats(const list<Goat>& trip){
 
+}
+
+//clear goats
+void clear_goats(list <Goat>& trip){
+    trip.clear();
+    cout << "Goats cleared" << endl;
 }
