@@ -156,14 +156,18 @@ void remove_goats_older_than(list<Goat>&trip, int age_limit){
     trip.remove_if([age_limit](const Goat& g) { return g.get_age() > age_limit; });
     cout << "Removed goats older than " << age_limit << ".\n";
 }
-//yiungest goat 
-void display_youngest_goat(const list<Goat>& trip){
-
+//first goat 
+void display_first_goat(const list<Goat>& trip){
+    if (!trip.empty){
+        cout << "First goat: " << trip.front().get_name() << endl;
+    } else {
+        cout << "No goats" << endl;
+    }
 }
-//unique names
+//display ages
 void display_goat_ages(const list<Goat>& trip){
     cout << "Ages: ";
-    for (const auto& goat :trip){
+    for (const auto& goat : trip){
         cout << goat.get_age();
     }
 }
